@@ -1,9 +1,4 @@
 {
   "deno.enable": true,
-  "editor.defaultFormatter": "denoland.vscode-deno",
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#5B0E22",
-    "titleBar.activeBackground": "#7F142F",
-    "titleBar.activeForeground": "#FEFBFC"
-  }
+  "editor.defaultFormatter": "denoland.vscode-deno"
 }
