@@ -10,7 +10,9 @@ deno task start
 
 This will watch the project directory and restart as necessary.
 
+# Deploy
+
 # TODO
 
-- [ ] Add unit tests
-- [ ] Fix scheduling for even number of team members
+- [x] Add unit tests
+- [x] Fix scheduling for even number of team members

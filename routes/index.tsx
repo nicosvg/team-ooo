@@ -8,8 +8,7 @@ export default function Home(props: PageProps) {
   const team = search.get("team")?.split(",").sort() || [];
 
   const manualOffset = Number(search.get("offset")) || 0;
-  const number = team.length % 2 === 0 ? team.length - 1 : team.length;
-  const offset = (getWeek(new Date()) + manualOffset) % team.length;
+  const weekNumber = (getWeek(new Date()));
 
   return (
     <>
@@ -21,10 +20,10 @@ export default function Home(props: PageProps) {
           <img src="/logo.png" class="pt-16" alt="logo" />
           <p class="pt-16">Week {getWeek(new Date()) + manualOffset}</p>
           <div class="p-8 flex flex-col items-center">
-            {getPairs(team, offset).map((pair) => {
+            {getPairs(team.length, weekNumber + manualOffset).map((pair) => {
               return (
                 <div class="p-1 text-xl">
-                  {pair[0]} - {pair[1]}
+                  {team[pair[0]]} - {team[pair[1]]}
                 </div>
               );
             })}
