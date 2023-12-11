@@ -12,8 +12,8 @@ export function getPlanning(team: number[]): [number, number][][] {
       pairs.push([j, (team.length - j + i) % team.length])
     }
     planning.push(pairs)
+
   }
-  printPlanning(planning)
   return planning
 }
 

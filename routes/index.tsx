@@ -28,6 +28,18 @@ export default function Home(props: PageProps) {
               );
             })}
           </div>
+          <div>
+            <div class="pt16 text-xl">Team</div>
+            {
+              team.map(member => {
+                return (
+                  <div>
+                    {member}
+                  </div>
+                )
+              })
+            }
+          </div>
         </div>
         <a href="https://fresh.deno.dev">
           <img
